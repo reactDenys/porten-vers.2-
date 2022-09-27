@@ -555,6 +555,7 @@ body {
     color: #ffffff;
 }
 
+/* Adaptation */
 @media (max-width: 1520px) {
     .watch__block {
         height: 228px;
@@ -570,13 +571,17 @@ body {
         height: 10vh;
     }
 
-    .watch__block img {
-        width: 100%;
+    .section__title {
+        font-size: 27px;
     }
 
     .watch__block {
         width: 161px;
         height: 200px;
+    }
+
+    .watch__block img {
+        width: 100%;
     }
 
     .watch__name {
@@ -585,10 +590,6 @@ body {
 
     .watch__block_modef {
         padding: 15px 26px 10px 27px;
-    }
-
-    .section__title {
-        font-size: 27px;
     }
 
     .partners__photo {
@@ -600,7 +601,7 @@ body {
     body {
         font-size: 12px;
     }
-
+    /* Intro */
     .intro__bar {
         height: 8vh;
     }
@@ -625,27 +626,31 @@ body {
     .section__title {
         font-size: 25px;
     }
-
+    /* Section */
     .section__title:after {
         margin: 35px auto;
+    }
+
+    .section__btn {
+        font-size: 10px;
     }
 
     .section__text {
         width: 540px;
     }
-    .section__btn {
-        font-size: 10px;
-    }
 
+    /* Watches */
     .watch__block {
         width: 130px;
         height: 150px;
     }
 
+    /* Partners */
     .partners__photo {
         max-width: 200px;
     }
 
+    /* Articles */
     .article__content {
         padding: 0;
     }
@@ -660,16 +665,49 @@ body {
 
 }
 @media (max-width: 1060px) {
+    /* Header */
+    .header__logo {
+        padding: 10px 0;
+    }
+
+    .header__nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 99%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+
+        background: #000;
+    }
+
+    .header__link:last-child {
+        margin: 0;
+    }
+
+    .header.active .header__nav {
+        display: flex;
+    }
+
+    .header__nav:before,
+    .header__nav:after {
+        display: none;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+    /* Intro */
     .intro__bar {
         font-size: 8px;
     }
 
+    /* Section */
     .section {
         flex-direction: column;
-    }
-
-    .section__text {
-        width: auto;
     }
 
     .section__content,
@@ -682,14 +720,20 @@ body {
         margin-top: 50px;
     }
 
-    .watches {
-        padding: 0 15px;
+    .section__text {
+        width: auto;
     }
 
     .section_last {
         padding: 50px 0;
     }
 
+    /* Watches */
+    .watches {
+        padding: 0 15px;
+    }
+
+    /* Addition */
     .addition {
         flex-direction: column;
         text-align: center;
@@ -710,40 +754,6 @@ body {
     .addition__form {
         margin-bottom: 15px;
     }
-
-    .header__logo {
-        padding: 10px 0;
-    }
-
-    .header__nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        position: absolute;
-        top: 99%;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-
-        background: #000;
-    }
-
-    .header__link:last-child {
-         margin: 0;
-    }
-
-    .header.active .header__nav {
-        display: flex;
-    }
-
-    .header__nav:before,
-    .header__nav:after {
-        display: none;
-    }
-
-    .nav_toggle {
-        display: block;
-    }
 }
 
 @media (max-width: 770px) {
@@ -751,24 +761,14 @@ body {
         font-size: 10px;
     }
 
+    /* Intro */
     .intro__description {
         width: auto;
     }
 
-    .article__title {
-        font-size: 12px;
-    }
-
-    .article__tags {
-        font-size: 10px;
-    }
-
+    /* Section */
     .section__title {
         font-size: 20px;
-    }
-
-    .section2 {
-        margin-top: 30px;
     }
 
     .section__title:after {
@@ -781,8 +781,26 @@ body {
         font-size: 9px;
     }
 
+    .section2 {
+        margin-top: 30px;
+    }
+
     .section_block {
         margin: 50px auto;
+    }
+
+    /* Watches */
+    .watches__wrapper {
+        flex-wrap: nowrap;
+        justify-content: normal;
+        margin-top: 0;
+        padding: 0;
+        min-width: 0;
+    }
+
+    /* Articles */
+    .article__title {
+        font-size: 12px;
     }
 
     .article__item {
@@ -791,15 +809,21 @@ body {
         justify-content: center;
     }
 
+    .article__tags {
+        font-size: 10px;
+    }
+
+    /* Partners */
+    .partners {
+        justify-content: center;
+    }
+
     .partners__photo {
         max-width: 120px;
         margin: 10px;
     }
 
-    .partners {
-        justify-content: center;
-    }
-
+    /* Addition */
     .addition__title {
         font-size: 20px;
         margin-bottom: 30px;
@@ -809,13 +833,6 @@ body {
         margin: 0;
     }
 
-    .watches__wrapper {
-        flex-wrap: nowrap;
-        justify-content: normal;
-        margin-top: 0;
-        padding: 0;
-        min-width: 0;
-    }
     .footer__content {
         font-size: 10px;
     }
@@ -825,10 +842,6 @@ body {
         display: none;
     }
 }
-
-
-
-
 
 
 
